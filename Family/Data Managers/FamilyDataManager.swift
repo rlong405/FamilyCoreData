@@ -47,7 +47,40 @@ class FamilyDataManager {
       return members
    }
 
+
+
+class func newFamily(familyName:String)  {
+
+   let context = getContext()
+   let newFamily = Family(context: context)
+
+   newFamily.familyName = familyName
+
+   do {
+     try context.save()
+   }
+   catch {
+      print (error)
+   }
 }
 
+   class func newFamilyMember(firstName:String, lastName: String, family:Family)  {
+
+      let context = getContext()
+      let newFamilyMember = FamilyMembers(context: context)
+
+      newFamilyMember.firstName = firstName
+      newFamilyMember.lastName = lastName
+      family.addToMember(newFamilyMember)
+
+      do {
+        try context.save()
+      }
+      catch {
+         print (error)
+      }
+   }
+
+}
 
 

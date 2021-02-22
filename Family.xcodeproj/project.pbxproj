@@ -16,10 +16,10 @@
 		9B08C95825E28A650011902D /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B08C95725E28A650011902D /* ViewModel.swift */; };
 		9B08C95B25E28B230011902D /* FamilyDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B08C95A25E28B230011902D /* FamilyDataManager.swift */; };
 		9BBB65E825E2925500F2942C /* FamilyMembersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBB65E725E2925500F2942C /* FamilyMembersView.swift */; };
-		9BBB65F825E296D300F2942C /* FamilyMembers+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBB65F425E296D300F2942C /* FamilyMembers+CoreDataProperties.swift */; };
-		9BBB65F925E296D300F2942C /* Family+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBB65F525E296D300F2942C /* Family+CoreDataClass.swift */; };
-		9BBB65FA25E296D300F2942C /* FamilyMembers+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBB65F625E296D300F2942C /* FamilyMembers+CoreDataClass.swift */; };
-		9BBB65FB25E296D300F2942C /* Family+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBB65F725E296D300F2942C /* Family+CoreDataProperties.swift */; };
+		9BBB661825E3D88700F2942C /* Family+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBB661425E3D88700F2942C /* Family+CoreDataClass.swift */; };
+		9BBB661925E3D88700F2942C /* Family+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBB661525E3D88700F2942C /* Family+CoreDataProperties.swift */; };
+		9BBB661A25E3D88700F2942C /* FamilyMembers+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBB661625E3D88700F2942C /* FamilyMembers+CoreDataClass.swift */; };
+		9BBB661B25E3D88700F2942C /* FamilyMembers+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBB661725E3D88700F2942C /* FamilyMembers+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,10 +34,10 @@
 		9B08C95725E28A650011902D /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		9B08C95A25E28B230011902D /* FamilyDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyDataManager.swift; sourceTree = "<group>"; };
 		9BBB65E725E2925500F2942C /* FamilyMembersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyMembersView.swift; sourceTree = "<group>"; };
-		9BBB65F425E296D300F2942C /* FamilyMembers+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FamilyMembers+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		9BBB65F525E296D300F2942C /* Family+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Family+CoreDataClass.swift"; sourceTree = "<group>"; };
-		9BBB65F625E296D300F2942C /* FamilyMembers+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FamilyMembers+CoreDataClass.swift"; sourceTree = "<group>"; };
-		9BBB65F725E296D300F2942C /* Family+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Family+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9BBB661425E3D88700F2942C /* Family+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Family+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9BBB661525E3D88700F2942C /* Family+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Family+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9BBB661625E3D88700F2942C /* FamilyMembers+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FamilyMembers+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9BBB661725E3D88700F2942C /* FamilyMembers+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FamilyMembers+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,10 +118,10 @@
 		9BBB65F025E2967E00F2942C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				9BBB65F525E296D300F2942C /* Family+CoreDataClass.swift */,
-				9BBB65F725E296D300F2942C /* Family+CoreDataProperties.swift */,
-				9BBB65F625E296D300F2942C /* FamilyMembers+CoreDataClass.swift */,
-				9BBB65F425E296D300F2942C /* FamilyMembers+CoreDataProperties.swift */,
+				9BBB661425E3D88700F2942C /* Family+CoreDataClass.swift */,
+				9BBB661525E3D88700F2942C /* Family+CoreDataProperties.swift */,
+				9BBB661625E3D88700F2942C /* FamilyMembers+CoreDataClass.swift */,
+				9BBB661725E3D88700F2942C /* FamilyMembers+CoreDataProperties.swift */,
 				9B08C94B25E289990011902D /* Persistence.swift */,
 				9B08C94D25E289990011902D /* Family.xcdatamodeld */,
 			);
@@ -197,15 +197,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BBB65FB25E296D300F2942C /* Family+CoreDataProperties.swift in Sources */,
 				9BBB65E825E2925500F2942C /* FamilyMembersView.swift in Sources */,
-				9BBB65FA25E296D300F2942C /* FamilyMembers+CoreDataClass.swift in Sources */,
-				9BBB65F825E296D300F2942C /* FamilyMembers+CoreDataProperties.swift in Sources */,
+				9BBB661A25E3D88700F2942C /* FamilyMembers+CoreDataClass.swift in Sources */,
 				9B08C95825E28A650011902D /* ViewModel.swift in Sources */,
 				9B08C95B25E28B230011902D /* FamilyDataManager.swift in Sources */,
-				9BBB65F925E296D300F2942C /* Family+CoreDataClass.swift in Sources */,
+				9BBB661825E3D88700F2942C /* Family+CoreDataClass.swift in Sources */,
 				9B08C94C25E289990011902D /* Persistence.swift in Sources */,
+				9BBB661B25E3D88700F2942C /* FamilyMembers+CoreDataProperties.swift in Sources */,
 				9B08C94F25E289990011902D /* Family.xcdatamodeld in Sources */,
+				9BBB661925E3D88700F2942C /* Family+CoreDataProperties.swift in Sources */,
 				9B08C94525E289970011902D /* ContentView.swift in Sources */,
 				9B08C94325E289970011902D /* FamilyApp.swift in Sources */,
 			);

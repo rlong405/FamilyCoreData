@@ -15,6 +15,15 @@ class FamilyViewModel: ObservableObject {
    init(){
       fetchFamilies()
    }
+
+   func addNewFamily(familyName: String) {
+      FamilyDataManager.newFamily(familyName: familyName)
+   }
+
+   func addNewFamilyMember(firstName: String, lastName: String, family:Family) {
+      FamilyDataManager.newFamilyMember(firstName: firstName, lastName: lastName, family:family)
+   }
+
    func fetchFamilies(){
 
       arrayOfFamilies = FamilyDataManager.fetchAllFamilies()
@@ -23,8 +32,6 @@ class FamilyViewModel: ObservableObject {
 
    func fetchFamilyMembers(family:Family) {
       arrayOfFamilyMembers = FamilyDataManager.fetchFamilyMembers(family:family)
-
-
    }
 
 
