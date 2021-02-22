@@ -15,7 +15,9 @@ struct ContentView: View {
    @State var familyName: String = ""
 
 
-   let paths = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)
+
+
+
 //    @FetchRequest(
 //        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
 //        animation: .default)
@@ -33,8 +35,11 @@ struct ContentView: View {
             }
 
            }.onAppear{
-            print (paths[0])
+            #if targetEnvironment(simulator)
+            printCoreDataPath()
+            #endif
            }
+
             if showNewFamilyPopUp {
                VStack {
                TextField("Family Name", text: $familyName)
@@ -67,4 +72,15 @@ struct ContentView: View {
       }
 
         }
+}
+
+
+func printCoreDataPath(){
+   let path = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.applicationSupportDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)
+
+   let dbName = PersistenceController.shared.container.name
+   let pasteboard = UIPasteboard.general
+   pasteboard.string = (path[0] + "/\(dbName).sqlite")
+  print (path[0] + "/\(dbName).sqlite")
+
 }

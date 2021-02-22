@@ -71,6 +71,9 @@ class func newFamily(familyName:String)  {
 
       newFamilyMember.firstName = firstName
       newFamilyMember.lastName = lastName
+
+     
+
       family.addToMember(newFamilyMember)
 
       do {
